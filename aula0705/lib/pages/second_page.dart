@@ -9,6 +9,7 @@ class SecondPage extends StatelessWidget {
   Widget build(BuildContext context) {
     //Recuperar o valor que foi passado na firstPAge
     final arguments = ModalRoute.of(context)!.settings.arguments as Mensagem; //o as Mensagem e pra fazer o casthing, convertendo pro tipo mensage, 
+    //esse final arguments é uma varial para capturar o que virá da página que chamou essa
     return Scaffold(
       appBar: AppBar(title: Text(arguments.descricao)),
       body: Center(
